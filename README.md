@@ -182,4 +182,15 @@ Als laatste moet er nog een functie toegevoegd worden die de inhoud van de box g
 
 <img src="workshopImages/infoScreenContentFunction.png">
 
+Hierna moet dit toegevoegd worden aan de goede layer als volgt:
+```js
+{geoDataLocations.features.map(airbnb => (
+...
+))};
+<div style={{ width: "15vw", height: "auto", backgroundColor: "lightgrey", boxShadow: "2px 2px 4px #000000" }}>
+  <h2>Selected location:</h2>
+  {this.getSelectedLocation()} //Get content voor box
+</div>
+```
+
 Open nu je browser. Als het goed is zie je markers op de kaart en wanneer je op een marker klikt worden er wat details over de locatie linksboven in het scherm weergegeven.
